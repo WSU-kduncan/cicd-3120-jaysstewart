@@ -1,0 +1,23 @@
+
+[
+    {
+      "id": "ENDPOINT-NAME",
+      "execute-command": "./script.sh",
+      "command-working-directory": "/home/ubuntu",
+      "response-message": "Executing redeploy web resume container",
+      "trigger-rule":
+      {
+        "match":
+        {
+          "type": "value",
+          "value": "CREATE-YOUR-OWN-TOKEN",
+          "parameter":
+          {
+            "source": "url",
+            "name": "GET-PARAM"
+          }
+        }
+      }
+    }
+]
+
