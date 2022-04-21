@@ -15,7 +15,7 @@
 - open browser and type "localhost:port"
 # pt2
 ## Create DockerHub public repo
-- creat docker hub account, and create a public repo on the account
+- go to dockerhub.com create docker hub account, and create a public repo on the account
 ## How to authenticate with DockerHub via CLI using DockHub credentials
 - docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
 ## Configure Github Secrets
@@ -36,4 +36,5 @@
 - install web hook with "sudo apt-get install webhook"
 - create  listener with "webhook -ip "IPADDRESS"" and "webhook -hooks hooks.json -verbose"
 ## setting up notifier in DockerHub
-- go to docker hub repo and put url from ec2 instance webhook into webhook tab
+- edit the connfiguration file of docker, and add a notification lister to the webserver url.
+- Must use an authorization token or dockerhub password to send notification.+
